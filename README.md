@@ -17,12 +17,14 @@ The goal of this project is to analyze the effects of occlusion queries in rende
 (Linux only, due to Qt dependencies)
 Use QtCreator 5.
 
+```
 - Go to BaseCode folder, and open a terminal there.
 - run: mkdir build
 - run: cd build
 - run: cmake ..
 - run: make
 - run the application: ./BaseCode
+```
 
 ## Implemented techniques
 - ImGui for manual variable handling.
