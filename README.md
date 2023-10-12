@@ -4,7 +4,6 @@
 * [General info](#general-info)
 * [How to run](#how-to-run)
 * [Implemented techniques](#implemented-techniques)
-* [Application output](#application-output)
 
 ## General info
 The goal of this project is to analyze the effects of occlusion queries in rendering. The compared methods, are:
@@ -30,5 +29,3 @@ Use QtCreator 5.
 - ImGui for manual variable handling.
 - Phong and Gouraud shading.
 - Stop-and-Wait occlusion culling
-
-## Application output
