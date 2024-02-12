@@ -34,7 +34,7 @@ The compared techniques are:
 - View-frustum culling + occlusion queries. (**DONE**)
 - Optimization (**NOT DONE**).
 
-**<ins>Disclaimer:</ins>** In this README.md file you can find the overview of the project. For more details on the theory and results, you can look into the attached "*FRR_Lab_Assignment_2.pdf*" file. It is not a full-fledged report (as should be), but provides useful information on the assignment, the results of the compared techniques, some conclusions, as well as issues encountered during development.
+**<ins>Disclaimer</ins>:** In this README.md file you can find the overview of the project. For more details on the theory and results, you can look into the attached "*FRR_Lab_Assignment_2.pdf*" file. It is not a full-fledged report (as should be), but provides useful information on the assignment, the results of the compared techniques, some conclusions, as well as issues encountered during development.
 
 ## <a name="how-to-run">⚙️ How to run</a>
 
@@ -57,7 +57,7 @@ Make sure you have the following installed on your machine:
 
 To run the application, inside the `/build/` directory, run: `./BaseCode`
 
-**<ins>NOTE:</ins>** In case the project loads more meshes than the computer can handle, change the
+**<ins>NOTE</ins>:** In case the project loads more meshes than the computer can handle, change the
 following lines of the Scene.h file:
 
 ```
