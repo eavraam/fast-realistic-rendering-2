@@ -34,7 +34,7 @@ The compared techniques are:
 - View-frustum culling + occlusion queries. (**DONE**)
 - Optimization (**NOT DONE**).
 
-**Disclaimer:** In this README.md file you can find the overview of the project. For more details on the theory and results, you can look into the attached "*FRR_Lab_Assignment_2.pdf*" file. It is not a full-fledged report (as should be), but provides useful information on the assignment, the results of the compared techniques, some conclusions, as well as issues encountered during development.
+**<ins>Disclaimer:</ins>** In this README.md file you can find the overview of the project. For more details on the theory and results, you can look into the attached "*FRR_Lab_Assignment_2.pdf*" file. It is not a full-fledged report (as should be), but provides useful information on the assignment, the results of the compared techniques, some conclusions, as well as issues encountered during development.
 
 ## <a name="how-to-run">⚙️ How to run</a>
 
@@ -57,7 +57,7 @@ Make sure you have the following installed on your machine:
 
 To run the application, inside the `/build/` directory, run: `./BaseCode`
 
-**NOTE:** In case the project loads more meshes than the computer can handle, change the
+**<ins>NOTE:</ins>** In case the project loads more meshes than the computer can handle, change the
 following lines of the Scene.h file:
 
 ```
@@ -68,15 +68,22 @@ following lines of the Scene.h file:
 ## <a name="implemented-techniques">📸 Implemented Techniques</a>
 
 **ImGui**
+
 In order to manually handle the variables of the application and monitor the performance, I have implemented an `ImGui` UI interface.
 
+
 **Shading Models**
+
 The two methods used for shading the 3D models are `Phong` and `Gouraud`. Gouraud shading computes the color intensity of a polygon at a vertex level (vertex shader) and interpolates those values across the polygon's surface, while Phong computes the shading at a pixel level (fragment shader) on the surface of the polygon.
 
+
 **Frustum Culling**
+
 Camera frustum represents the zone of vision of a camera. `Frustum culling` is a visibility optimization technique, which sorts visible and invisible elements, and renders only the visible ones. To apply frustum culling, the world-space camera frustum planes are computed. With these, we can check if an object is inside or outside the frustum by testing the frustum planes against the scene's models' Axis-Aligned Bounding Box's (AABB) corners. We typically use a bounding volume to test for frustum culling, since it is a time-efficient rough approximation of our model's mesh.
 
+
 **Occlusion Culling**
+
 `Occlusion Culling` is a feature that disables rendering of objects, when they are not currently seen
 by the camera, because they are obscured (occluded) by other objects. In this project, I apply a simple occlusion query method , following these steps:
 
